@@ -5,7 +5,9 @@ int main()
     int n;
     cin >> n;
     vector<bool> prime(n + 1, true);
-    for (int i = 2; i <= n; i++)
+
+    for (int i = 2; i * i <= n; i++)
+    // i * i <= n  is equivalent to  i <= sqrt(n)   (for i ≥ 0)
     {
         if (prime[i])
         {

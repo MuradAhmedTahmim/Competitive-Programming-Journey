@@ -10,15 +10,17 @@ int main()
     cin >> n;
     vector<int> divs[n + 1];
 
-    for (int i = 1; i <= n; i++)
+    for (int i = 2; i <= n; i++)
     {
+        if (divs[i].size() > 0) continue; // For prime divisors
+
         for (int j = i; j <= n; j += i)
         {
             divs[j].push_back(i);
         }
     }
 
-    for (int i = 1; i <= n; i++)
+    for (int i = 2; i <= n; i++)
     {
         cout << i << " -> ";
         for (auto val : divs[i])

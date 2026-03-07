@@ -32,3 +32,12 @@ int main()
 
     return 0;
 }
+
+
+// 1. Range Sum Query
+// 2. Subarray Sum = K
+// 3. Count Subarray
+// 4. 2D Prefix Sum
+// 5. Difference Array
+// 6. Prefix Frequency
+// 7. Maximum Subarray
